@@ -4,7 +4,7 @@ import * as React from "react";
 import ReactDOMServer from "react-dom/server";
 import { Provider } from "react-redux";
 import modulesEnhancer from "redux-modules-enhancer";
-import { connectModules } from "../dist/react-redux-module";
+import { connectModules } from "../dist/preact-redux-module";
 
 describe("connectModules", function() {
 

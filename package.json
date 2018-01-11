@@ -1,16 +1,16 @@
 {
-  "name": "react-redux-module",
-  "version": "1.3.1",
+  "name": "preact-redux-module",
+  "version": "1.3.2",
   "description": "A react component for loading modules into redux using the redux-modules-enhancer package.",
-  "main": "lib/ReduxModule.js",
+  "main": "dist/preact-redux-module.min.js.js",
   "scripts": {
     "clean": "rm -r -f dist",
-    "compile": "npm run clean && ./node_modules/.bin/webpack -p && ./node_modules/.bin/webpack -d --output-filename react-redux-module.js",
+    "compile": "npm run clean && ./node_modules/.bin/webpack -p && ./node_modules/.bin/webpack -d --output-filename preact-redux-module.js",
     "test": "npm run compile && mocha --compilers js:babel-core/register --reporter spec",
     "prepare": "npm run compile",
     "prepublishOnly": "git push --tags && git push"
   },
-  "repository": "https://github.com/BEllis/react-redux-module.git",
+  "repository": "https://github.com/BEllis/preact-redux-module.git",
   "keywords": [
     "redux",
     "react",
@@ -29,9 +29,9 @@
     "chai": "^4.1.2",
     "minifier": "^0.8.1",
     "mocha": "^3.5.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.6",
+    "preact": "^8.2.7",
+    "preact-compat": "^3.17.0",
+    "preact-redux": "^2.0.3",
     "redux": "^3.7.2",
     "webpack": "^3.5.6"
   },

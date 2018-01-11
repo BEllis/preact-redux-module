@@ -18,11 +18,18 @@ var config = {
       }
     })
   ],
+  resolve: {
+    alias: {
+      "react": "preact-compat",
+      "react-dom": "preact-compat",
+      "react-redux": "preact-redux"
+    }
+  },
   output: {
     path: BUILD_DIR,
-    library: "react-redux-module",
+    library: "preact-redux-module",
     libraryTarget: "umd",
-    filename: 'react-redux-module.min.js'
+    filename: 'preact-redux-module.min.js'
   },
   module: {
     loaders : [
